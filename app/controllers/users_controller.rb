@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+  before_action :authenticate_user!, except: [:top, :about]
   before_action :is_matching_login_user, only: [:edit, :update]
 
   def show
