@@ -1,0 +1,2 @@
+module FabotiteHelper
+end
